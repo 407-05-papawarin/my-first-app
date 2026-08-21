@@ -1,5 +1,5 @@
-import streamlit as st
 import time
+import streamlit as st
 
 st.title("⏱️ เกมเติมศัพท์จับเวลา")
 
@@ -46,8 +46,8 @@ def show_result_dialog(ans1, ans2):
     # ✏️ [พื้นที่สำหรับนักเรียน]: เพิ่มตรวจข้อ 3, 4 ตรงนี้
 
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
-   
-if score == 2:
+
+    if score == 2:
         st.success("🎉 You win!")
     else:
         st.error("💀 You lose!")
@@ -101,4 +101,4 @@ if st.session_state.get("is_ended", False):
     show_result_dialog(ans1, ans2)
 
 st.divider()
-st.write("นางสาวปภาวรินท์ มณีเกี๋ยง เลขที่ 5 ม.4/7")
+st.write("นางสาวปภาวรินท์ มณีเกี่๋ยง เลขที่ 5 ม.4/7")
