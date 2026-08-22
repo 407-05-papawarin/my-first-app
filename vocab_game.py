@@ -63,7 +63,7 @@ def show_result_dialog(ans1, ans2):
         st.session("✅ ข้อ 4: ถูกต้อง")
          score += 1
     else:
-        st.error(f"❌ ข้อ 4: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
+        st.error(f"❌ ข้อ 4: ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")
 
 
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
