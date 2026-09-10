@@ -101,28 +101,30 @@ ans1 = st.text_input(
     value=st.session_state.ans1_val,
 )
 ans2 = st.text_input(
-    "ข้อ 2: แอปสีแดงดำ เอาไว้ดูหนังดูซีรีย์ ลงท้ายด้วยตัว ` X. 🐟",
+    "ข้อ 2: แอปสีแดงดำ เอาไว้ดูหนังดูซีรีย์ ลงท้ายด้วยตัว X. 🎥",
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "ข้อ 2: Cats love to eat `f _ s h`. 🐟",
-    value=st.session_state.ans2_val,
+    "ข้อ 3: แอปที่เด็ก Gen alfa ชอบเล่น มีเงินในเกมเรียกว่า Robux. 💸",
+    value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 2: Cats love to eat `f _ s h`. 🐟",
-    value=st.session_state.ans2_val,
+    "ข้อ 4: แอปปกสีดำ ที่เอาไว้พูดคุยเกี่ยวกับประเด็นร้อนทางสังคม มีชื่อเดิมว่าทวิตเตอร์. 📱",
+    value=st.session_state.ans4_val,
 )
 ans5 = st.text_input(
-    "ข้อ 2: Cats love to eat `f _ s h`. 🐟",
-    value=st.session_state.ans2_val,
+    "ข้อ 5: แอปที่ Gen z ชอบใช้ เอาไว้ลงสตอรี่ ลงรูป และพูดคุยกัน มีสีรุ้ง. 🌈",
+    value=st.session_state.ans5_val,
 )
 
 
-# อัปเดตค่าล่าสุดเข้าตัวแปร
 st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
+st.session_state.ans2_val = ans3
+st.session_state.ans2_val = ans4
+st.session_state.ans2_val = ans5
 
-# ✏️ [พื้นที่สำหรับนักเรียน]: เพิ่มข้อ 3, 4 ตรงนี้
+
 
 
 # 4. ปุ่มส่งคำตอบ
@@ -136,7 +138,7 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
 
 # 5. แสดง Dialog ผลลัพธ์
 if st.session_state.get("is_ended", False):
-    show_result_dialog(ans1, ans2)
+    show_result_dialog(ans1, ans2, ans3, ans4, ans5)
 
 st.divider()
 st.write("นางสาวปภาวรินท์ มณีเกี๋ยง เลขที่ 5 ม.4/7")
