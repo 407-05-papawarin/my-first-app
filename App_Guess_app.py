@@ -133,4 +133,4 @@ if st.session_state.is_ended:
     )
 
 st.divider()
-st.write("นางสาวปภาวรินท์ มณีเกี๋ยง เลขที่ 5 ม.4/7")
+
