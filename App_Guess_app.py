@@ -72,9 +72,11 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5):
     st.info(f"🏆 ได้คะแนนรวม: {score} / 5 คะแนน")
 
     if score == 5:
-        st.success("🎉 You win!")
+        st.success("🎉 ว้าวว เก่งจังเลยย")
+    elif score>= 1 and score <= 4:
+        st.info("🎈ไม่เป็นไรน้า ลองทำอีกรอบ❤️‍🩹")
     else:
-        st.error("💀 You lose!")
+        st.error("แพ้ เริ่มใหม่ 😿")
 
 
 st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
