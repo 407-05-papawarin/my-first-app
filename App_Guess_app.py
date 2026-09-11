@@ -39,31 +39,31 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5):
     u_ans4 = ans4.strip().lower()
     u_ans5 = ans5.strip().lower()
 
-    if u_ans1 == "Line":
+    if u_ans1 == "line":
         st.success("✅ ข้อ 1: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 1: ยังไม่ถูกต้อง (คุณตอบ '{u_ans1}')")
 
-    if u_ans2 == "Netflix":
+    if u_ans2 == "netflix":
         st.success("✅ ข้อ 2: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 2: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
 
-    if u_ans3 == "Roblox":
+    if u_ans3 == "roblox":
         st.success("✅ ข้อ 3: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
 
-    if u_ans4 == "X":
+    if u_ans4 == "x":
         st.success("✅ ข้อ 4: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 4: ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")
 
-    if u_ans5 == "Instagram":
+    if u_ans5 == "instagram":
         st.success("✅ ข้อ 5: ถูกต้อง")
         score += 1
     else:
